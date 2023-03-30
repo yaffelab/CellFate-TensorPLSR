@@ -1,4 +1,4 @@
-% The following script creates 
+% The following script creates the figures from the paper
 lv_x = 1; % Latent variable on x-axis
 lv_y = 2; % Latent variable on y-axis
 t = 6; % Timepoints
