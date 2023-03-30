@@ -268,7 +268,7 @@ xline(0, '--','Color',[0.5 0.5 0.5],'LineWidth',2);
 title('Scores (s_x)');
 set(gca,'FontSize',font_size,'LineWidth',1);
 set(findobj(gcf,'type','axes'),'FontWeight','Bold');
-l = legend([s1 s2 s3 s4],{'DMSO','0.5 µM','2 µM','10 µM'},'Location','bestoutside');
+l = legend([s1 s2 s3 s4],{'DMSO','0.5 ÂµM','2 ÂµM','10 ÂµM'},'Location','bestoutside');
 l.FontWeight = 'normal';
 
 % Labels of signals
@@ -435,13 +435,13 @@ b.CData(6,:) = colors(4,:);
 b.CData(7,:) = colors(1,:);
 b.CData(8,:) = colors(2,:);
 b.CData(9,:) = colors(2,:);
-b.CData(10,:) = colors(2,:);
-b.CData(11,:) = colors(1,:);
+b.CData(10,:) = colors(1,:);
+b.CData(11,:) = grey;
 b.CData(12,:) = grey;
-b.CData(13,:) = grey;
+b.CData(13,:) = colors(4,:);
 b.CData(14,:) = colors(4,:);
 b.CData(15,:) = colors(4,:);
-b.CData(16,:) = colors(4,:);
+b.CData(16,:) = grey;
 b.CData(17,:) = grey;
 b.CData(18,:) = grey;
 b.CData(19,:) = grey;
