@@ -98,7 +98,7 @@ s = zeros(6,1);
 order = [13,19,25,31,37,43,49,55,1,7];
 order_2 = [3,4,5,6,7,8,9,10,1,2];
 
-R_2 = 1 - sum((exp_flat-calib_flat).^2)/sum((exp_flat-mean(calib_flat)).^2); % Model R^2
+R_2 = 1 - sum((exp_flat-calib_flat).^2)/sum((exp_flat-mean(exp_flat)).^2); % Model R^2
 corr_1 = corrcoef(exp_flat,calib_flat); % Pearson correlation of calibration model
 % Below generates experimental vs predicted scatter plot from the
 % calibration model
@@ -174,7 +174,7 @@ for i = order
 end
 
 
-Q_2 = 1 - sum((exp_flat-val_flat).^2)/sum((exp_flat-mean(val_flat)).^2); % Q^2 of validation model
+Q_2 = 1 - sum((exp_flat-val_flat).^2)/sum((exp_flat-mean(exp_flat)).^2); % Q^2 of validation model
 corr_2 = corrcoef(exp_flat,val_flat); % Pearson correlation for the vakudation model
 
 counter = 1;
